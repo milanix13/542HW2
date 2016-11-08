@@ -112,4 +112,105 @@ public class BinarySearchTest {
     	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
     }
 
+	// BVA Test Case 8
+    @Test
+    public void testBinarySearchTC8() {
+    	int[] a = new int[Integer.MAX_VALUE - 1];
+    	int v = 334635;
+    	int r;
+
+    	for (int i = 0; i < a.length; i++) {
+    		a[i] = i + 1;
+    	}
+
+    	BinarySearch bs = new BinarySearch();
+    	r = bs.binarySearch(a, v);
+
+    	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
+    }
+
+	// BVA Test Case 9
+    @Test
+    public void testBinarySearchTC9() {
+    	int[] a = new int[Integer.MAX_VALUE];
+    	int v = 334635;
+    	int r;
+
+    	for (int i = 0; i < a.length; i++) {
+    		a[i] = i + 1;
+    	}
+
+    	BinarySearch bs = new BinarySearch();
+    	r = bs.binarySearch(a, v);
+
+    	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
+    }
+
+	// BVA Test Case 10
+    @Test
+    public void testBinarySearchTC10() {
+    	int[] a = null;
+    	int v = 334635;
+    	int r;
+
+    	for (int i = 0; i < a.length; i++) {
+    		a[i] = i + 1;
+    	}
+
+    	BinarySearch bs = new BinarySearch();
+    	r = bs.binarySearch(a, v);
+
+    	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
+    }
+
+	// BVA Test Case 11
+    @Test
+    public void testBinarySearchTC11() {
+    	int[] a = null;
+    	int v = Integer.MAX_VALUE - 1;
+    	int r;
+
+    	for (int i = 0; i < a.length; i++) {
+    		a[i] = i + 1;
+    	}
+
+    	BinarySearch bs = new BinarySearch();
+    	r = bs.binarySearch(a, v);
+
+    	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
+    }
+
+	// BVA Test Case 12
+    @Test
+    public void testBinarySearchTC12() {
+    	int[] a = new int[Integer.MAX_VALUE + 1];
+    	int v = 334635;
+    	int r;
+
+    	for (int i = 0; i < a.length; i++) {
+    		a[i] = i + 1;
+    	}
+
+    	BinarySearch bs = new BinarySearch();
+    	r = bs.binarySearch(a, v);
+
+    	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
+    }
+
+	// BVA Test Case 13
+    @Test
+    public void testBinarySearchTC13() {
+    	int[] a = new int[Integer.MAX_VALUE + 1];
+    	int v = Integer.MAX_VALUE + 1;
+    	int r;
+
+    	for (int i = 0; i < a.length; i++) {
+    		a[i] = i + 1;
+    	}
+
+    	BinarySearch bs = new BinarySearch();
+    	r = bs.binarySearch(a, v);
+
+    	assertTrue("result not between -1 and " + Integer.MAX_VALUE, r >= -1 && r <= Integer.MAX_VALUE  );
+    }
 }
